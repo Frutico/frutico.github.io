@@ -385,7 +385,6 @@ class Player extends Entity {
     }
 
     if (!game.keyboard.down && game.keyboardWasPressed.down) {
-      this.canJump = true;
       this.unduck();
     }
 
