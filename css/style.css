@@ -1,0 +1,6 @@
+.game-container {
+    width: 800px;
+    height: 400px;  
+    background-color: rgb(255, 255, 255);
+    margin: 6vh auto 6vh auto;
+}
