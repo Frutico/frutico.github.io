@@ -104,7 +104,6 @@ class GameState {
     this.bg2.x -= this.wordSpeed;
     if (this.bg1.x <= -700) this.bg1.x = 700;
     if (this.bg2.x <= -700) this.bg2.x = 700;
-    
 
     //check collision
     for (let i = 0; i < this.obstacleArr.length; i++) {
@@ -417,12 +416,12 @@ class Player extends Entity {
 
   duck() {
     this.y += 30;
-    this.height -= 30;
+    this.height = 30;
   }
 
   unduck() {
     this.y -= 30;
-    this.height += 30;
+    this.height = 60;
   }
 }
 
