@@ -62,7 +62,7 @@ class Game {
   }
 
   touchEnd(e) {     
-    this.keyboard.up = true; 
+    this.keyboard.up = false; 
   }
 }
 
