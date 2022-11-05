@@ -56,6 +56,13 @@ class Game {
     else if (e.keyCode == 68) this.keyboard.right = false;
     else if (e.keyCode == 65) this.keyboard.left = false;
   }
+
+  touchStart(e) {
+    this.keyboard.up = true;
+  }
+
+  touchEnd(e) {      
+  }
 }
 
 //game state
@@ -436,4 +443,12 @@ window.addEventListener("keydown", function (e) {
 });
 window.addEventListener("keyup", function (e) {
   game.keyUpHandler(e);
+});
+
+//mobile events
+window.addEventListener('touchstart', function (e) {
+  game.touchStart(e);
+});
+window.addEventListener('touchend', function (e) {
+  game.touchEnd(e);
 });
