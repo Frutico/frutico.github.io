@@ -61,7 +61,8 @@ class Game {
     this.keyboard.up = true;
   }
 
-  touchEnd(e) {      
+  touchEnd(e) {     
+    this.keyboard.up = true; 
   }
 }
 
